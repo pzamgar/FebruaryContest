@@ -4,11 +4,17 @@ namespace FebruaryContestEntry
 {
 	class Program
 	{
-		const char block = '▓';
-
 		static void Main(string[] args)
 		{
-			// The solution implementation goes here
+			Console.WriteLine();
+			
+			var rectangle = new Rectangle();
+			rectangle
+				.Width(15)
+				.Height(30)
+				.BuildRectangle()
+				.FillRectangle()
+				.ShowRectangleColor();
 
 			Console.ResetColor();
 			Console.WriteLine();
